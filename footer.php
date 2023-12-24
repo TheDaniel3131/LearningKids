@@ -7,6 +7,9 @@
         font-family: 'Open Sans', sans-serif; /* Modern font */
         padding: 40px 0;
         text-align: center;
+        position: relative; /* For positioning the footer at the bottom of the page */
+        display: block;
+        z-index: 9999;
     }
 
     .footer-content {
