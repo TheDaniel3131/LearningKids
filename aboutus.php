@@ -23,7 +23,7 @@
         h1 {
             color: #007bff;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 5px;
             font-size: 3.5em;
             font-weight: 950;   
         }
