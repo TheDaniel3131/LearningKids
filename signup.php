@@ -53,12 +53,122 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | LearningKids</title>
 </head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 95vh;
+    }
+
+    .signup {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    form {
+        width: 100%;
+        position: relative;
+        max-width: 500px;
+        padding: 35px 25px 35px 25px;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    #forming{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-right: 35px;
+        right: 7.27%;
+        margin-bottom: 35px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+
+    /* Adjustments for the "Role" field */
+    label[for="role"] {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    select[name="role"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 25px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;    
+        cursor: pointer;
+        border-radius: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #005cbf;
+    }
+
+    p {
+        margin-top: 10px;
+        color: #888;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .error {
+        color: #d9534f;
+        margin-bottom: 10px;
+    }
+</style>
 <body>
+<section class="signup">
     <h1>Sign Up</h1>
     <?php if (isset($error)) { ?>
         <p><?php echo $error; ?></p>
     <?php } ?>
-    <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+    <form method="POST" id="forming" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
         <label for="email">Email:</label>
         <input type="email" name="email" required><br><br>
         <label for="password">Password:</label>
@@ -67,8 +177,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <select name="role" required>
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>
-        </select><br><br>
+        </select><br><br><br>
         <input type="submit" value="Sign Up">
     </form>
+</section>
 </body>
 </html>
