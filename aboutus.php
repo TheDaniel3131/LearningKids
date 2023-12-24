@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon/icon.png">
     <title>About Us | LearningKids</title>
     <style>
         body {
@@ -16,13 +17,11 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 50px;
-            /* background-color: #fff; */
             border-radius: 8px;
-            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
         }
 
         h1 {
-            color: #007bff; /* Updated heading color */
+            color: #007bff;
             text-align: center;
             margin-top: 30px;
             font-size: 3.5em;
@@ -35,9 +34,9 @@
         }
 
         .image-container img {
-            max-width: 50%; /* Utilize the full width of the container */
+            max-width: 50%;
             height: auto;
-            border-radius: 8px; /* Add a subtle border-radius for a modern look */
+            border-radius: 8px;
         }
 
         .text-container {
@@ -45,20 +44,46 @@
         }
 
         .text-container p {
-            color: #333; /* Darken the text color for better readability */
+            color: #333;
             line-height: 1.6;
             justify-content: center;    
             text-align: justify;
             font-size: 1.2em;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
+            .about-container {
+                padding: 30px;
+            }
+
             h1 {
-                font-size: 24px;
+                font-size: 2.5em;
+            }
+
+            .image-container img {
+                max-width: 80%;
             }
 
             .text-container p {
-                font-size: 14px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .about-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .image-container img {
+                max-width: 100%;
+            }
+
+            .text-container p {
+                font-size: 0.9em;
             }
         }
     </style>
