@@ -45,6 +45,7 @@
         textarea {
             width: 100%;
             padding: 10px;
+            font-size: 1.2em;
             border: 1px solid #ccc;
             border-radius: 4px;
             margin-bottom: 15px;
@@ -82,7 +83,7 @@
 <body>
     <div class="sp-container">
         <h1>Contact Us</h1><br><hr><br>
-        <form>
+        <form action="submit_sp.php" method="post">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
@@ -92,9 +93,10 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             <br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="showPopup()">
         </form>
     </div>
 <?php include 'footer.php'; ?>
+
 </body>
 </html>
