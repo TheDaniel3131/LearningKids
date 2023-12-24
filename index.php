@@ -188,21 +188,21 @@
             <h2>Learn New Knowledge | Have Fun While Learning | Free, Informative & Educational Content</h2>
             <div class="subjects-grid">
                 <figure class="subject math">
-                    <a href="subjects/math.php">
+                    <a href="login.php">
                         <img src="assets/images/math-image.png" alt="Math">
                     </a>
                     <h3>Math</h3>
                     <figcaption>Easy and fun math lessons! You will learn basic mathematic skills such as addition, subtraction, multiplication, and division.</figcaption>
                 </figure>
                 <figure class="subject science">
-                    <a href="subjects/science.php">
+                    <a href="login.php">
                         <img src="assets/images/science-image.png" alt="Science">
                     </a>
                     <h3>Science</h3>
                     <figcaption>Discover the wonders of science! Explore various scientific concepts and conduct exciting experiments.</figcaption>
                 </figure>
                 <figure class="subject english">
-                    <a href="subjects/english.php">
+                    <a href="login.php">
                         <img src="assets/images/english-image.png" alt="English">
                     </a>
                     <h3>English</h3>

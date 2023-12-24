@@ -172,7 +172,7 @@
         }
     </style>
 </head>
-<?php require 'guest_navbar.php'?>
+<?php require 'logged_navbar.php'?>
 <body>
     <header class="main-header">
         <div class="container header-content">

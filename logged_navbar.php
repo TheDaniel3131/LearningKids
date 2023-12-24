@@ -85,16 +85,32 @@
     }
 
     /* Login Icon */
-    .login-icon {
+    /* .login-icon {
         display: inline-block;
         width: 32px;
         height: 32px;
         top: 5px;
         background-image: url('assets/images/login-icon.png'); /* Path to your login icon image */
-        background-size: cover;
+        /* background-size: cover;
         cursor: pointer;
         vertical-align: middle;
-        margin-left: auto;
+        margin-left: auto; */
+    /* } */ 
+
+    
+    .logout-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #35aadc; /* Light blue for the button background */
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     /* Text Logo */
@@ -113,7 +129,7 @@
     }
 
     /* Responsive login button that will only show on smaller screens */
-    .responsive-logoput-btn {
+    .responsive-logout-btn {
         display: none; /* Hidden by default */
         /* Styling for the button */
         padding: 10px 20px;
@@ -240,7 +256,7 @@
             outline: none; /* Remove outline if there's any */
         }
 
-        .login-icon {
+        .logout-btn {
             display: none; /* Hide the login icon */
         }
     }
@@ -332,7 +348,7 @@
             position: relative;
         }
 
-        /* Style the responsive login button */
+        /* Style the responsive logout button */
         .responsive-logout-btn {
             display: block; /* Show the button */
             padding: 10px 15px; /* Consistent padding */
@@ -355,7 +371,7 @@
             outline: none; /* Remove outline if there's any */
         }
 
-        .login-icon {
+        .logout-btn {
             display: none; /* Hide the login icon */
         }
     }
@@ -479,7 +495,7 @@
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="logo">LearningKids</div> 
     <ul>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="logged_index.php">Home</a></li>
         <li class="dropdown">
             <a href="#" class="dropbtn">Subjects</a>
             <div class="dropdown-content">
@@ -491,7 +507,7 @@
         <li><a href="aboutus.php">About</a></li>
         <li><a href="faq.php">FAQ</a></li>
         <li><a href="support.php">Support</a></li>
-        <li><a href="login.php" class="login-icon"></a></li> <!-- Login Icon -->
+        <li class="logout-btn"><a href="logout.php">Logout</a></li> 
         <li class="responsive-logout-btn">Logout</li> <!-- New Responsive Login Button -->
     </ul>
 </nav>

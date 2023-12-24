@@ -85,9 +85,10 @@
             </div>
             <div class="social-media">
                 <h4>Connect With Us</h4>
-                <a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="assets/images/twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="assets/images/linkedin-icon.png" alt="LinkedIn"></a>
+                <!-- This is just dummy example links for the project.  -->
+                <a href="https://facebook.com/learningkids"><img src="assets/images/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com/learningkids"><img src="assets/images/twitter-icon.png" alt="Twitter"></a>
+                <a href="https://linkedin.com/in/learningkids"><img src="assets/images/linkedin-icon.png" alt="LinkedIn"></a>
             </div>
         </div>
         <div class="footer-bottom">
