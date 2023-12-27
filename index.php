@@ -7,7 +7,7 @@
     <meta name="author" content="DP">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="120">
-    <link rel="icon" href="assets/icon/icon.png">]
+    <link rel="icon" href="assets/icon/icon.png">
     <title>Homepage | Learning Kids</title>
     <style>
         /* Basic Reset */
